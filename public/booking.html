@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Your Package | Verda Forma</title>
+    <meta name="description" content="Choose your package with Verda Forma for luxury AI-powered interior design services">
+    <meta name="keywords" content="interior design packages, luxury design packages, AI design packages, Verda Forma">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="stylesheet" href="styles/animations.css">
+</head>
+<body>
+    <header id="header" class="luxury-header">
+        <div class="logo">
+            <a href="index.html">Verda Forma</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="booking.html" class="active">Choose Your Package</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="booking-hero">
+            <h1 class="elegant-title">Choose Your Package</h1>
+            <p class="section-subtitle">Select the perfect design package for your space</p>
+        </section>
+
+        <section class="booking-form">
+            <form id="packageForm" class="luxury-form">
+                <div class="form-group">
+                    <label for="package">Select Package:</label>
+                    <select id="package" name="package" required>
+                        <option value="">Choose a package...</option>
+                        <option value="essential">Essential Design - £499</option>
+                        <option value="premium">Premium Design - £999</option>
+                        <option value="luxury">Luxury Design - £1,999</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Project Details:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+
+                <button type="submit" class="submit-button">Book Consultation</button>
+            </form>
+        </section>
+
+        <section class="faq">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>What's included in each package?</h3>
+                    <p>Each package includes AI-generated designs, consultations, and detailed plans. Higher-tier packages offer more rooms, revisions, and additional services.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How long does the process take?</h3>
+                    <p>The timeline varies by package and project scope, typically ranging from 2-8 weeks for completion.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Can I upgrade my package later?</h3>
+                    <p>Yes, you can upgrade to a higher-tier package at any time during the process.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How does the AI design process work?</h3>
+                    <p>Our AI analyzes your preferences, space, and requirements to generate personalized design concepts.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What if I'm not satisfied?</h3>
+                    <p>We offer revision rounds and work closely with you to ensure your complete satisfaction.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do you offer international services?</h3>
+                    <p>Yes, we provide our AI-powered design services worldwide through virtual consultations.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Verda Forma</h3>
+                <p>Luxury AI-Powered Interior Design</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="booking.html">Choose Your Package</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: info@verdaforma.com</p>
+                <p>Phone: (555) 123-4567</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Verda Forma. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/booking.js"></script>
+</body>
+</html>
