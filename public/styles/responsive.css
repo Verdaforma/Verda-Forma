@@ -1,0 +1,91 @@
+/* Responsive Styles */
+
+/* Tablets and smaller desktops */
+@media screen and (max-width: 1023px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .features-grid,
+    .packages-grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 1rem;
+    }
+
+    .package-card {
+        padding: 1.5rem;
+    }
+
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile devices */
+@media screen and (max-width: 768px) {
+    .luxury-header {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .logo {
+        margin-bottom: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .features-grid,
+    .packages-grid,
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .package-card {
+        margin: 1rem 0;
+    }
+
+    .footer-section {
+        text-align: center;
+    }
+}
+
+/* Small mobile devices */
+@media screen and (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .cta-button,
+    .package-button {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    .feature-card,
+    .package-card {
+        padding: 1rem;
+    }
+
+    .footer-bottom {
+        font-size: 0.8rem;
+    }
+}

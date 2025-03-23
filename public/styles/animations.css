@@ -1,0 +1,88 @@
+/* Animations */
+
+/* Fade In */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Slide Up */
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Scale In */
+@keyframes scaleIn {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Apply animations */
+.hero-content {
+    animation: fadeIn 1s ease-out;
+}
+
+.feature-card,
+.package-card {
+    animation: slideUp 0.6s ease-out;
+}
+
+.cta-button,
+.package-button {
+    animation: scaleIn 0.4s ease-out;
+}
+
+/* Hover animations */
+.feature-card:hover,
+.package-card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+.cta-button:hover,
+.package-button:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/* Navigation hover effect */
+nav ul li a {
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: var(--accent-color);
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* Active link animation */
+nav ul li a.active::after {
+    width: 100%;
+}
