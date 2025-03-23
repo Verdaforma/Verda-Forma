@@ -1,0 +1,33 @@
+{
+  "name": "verda-forma",
+  "version": "1.0.0",
+  "description": "Verda Forma - Luxury AI-powered interior design services website",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node server.js",
+    "build": "echo \"No build step required\"",
+    "start": "node server.js",
+    "test": "echo \"No test specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Verdaforma/Verda-Forma.git"
+  },
+  "keywords": [
+    "interior-design",
+    "ai-powered",
+    "luxury-design",
+    "web-application"
+  ],
+  "author": "Verda Forma",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "express": "^4.18.2",
+    "firebase": "^10.8.0",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
